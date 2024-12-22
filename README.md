@@ -1,3 +1,5 @@
+[![CI/CD Pipeline](https://github.com/SergioAnastacio/sa-web-test/actions/workflows/main.yml/badge.svg)](https://github.com/SergioAnastacio/sa-web-test/actions/workflows/main.yml)
+
 # sa-web-test
 
 This template should help get you started developing with Vue 3 in Vite.
