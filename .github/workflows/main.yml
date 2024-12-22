@@ -54,6 +54,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      
+      - name: Install dependencies
+        run: npm install
 
       - name: Run unit tests
         run: node --run test:unit
@@ -78,6 +81,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Install dependencies
+        run: npm install
+        
       - name: Run end-to-end tests
         run: node --run test:e2e
 
@@ -101,6 +107,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Install dependencies
+        run: npm install
+        
       - name: Run coverage tests
         run: node --run test:coverage
 
@@ -124,6 +133,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Install dependencies
+        run: npm install
+        
       - name: Format code
         run: node --run format
 
@@ -147,6 +159,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Install dependencies
+        run: npm install
+        
       - name: Lint code
         run: node --run lint
   build:
@@ -169,6 +184,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Install dependencies
+        run: npm install
+        
       - name: Build project
         run: node --run build
   deploy:
