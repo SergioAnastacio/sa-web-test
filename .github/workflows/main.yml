@@ -186,4 +186,4 @@ jobs:
         with:
           github_token: ${{ secrets.PAT }}
           publish_dir: ./dist
-          cname: www.anasty.icu
+          
